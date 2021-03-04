@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <metaaa charset= "UTF-8>
+	<meta charset= "UTF-8">
+	<style>
+		/* Animación con keyframe llamada "latidos" */
+		@keyframes latidos {
+    		from { transform: none; }
+    		50% { transform: scale(1.9); }
+    		to { transform: none; }
+		}
+		/* En la clase corazon vamos a llamar latidos en la animación  */
+		.corazon {
+			display: inline-block;
+			font-size: 150px;
+			text-shadow: 0 0 10px #222,1px 1px  0 #450505;
+			color: red;
+			animation: latidos .5s infinite;
+			transform-origin: center;
+		}
+
+		body { text-align: center;
+  			background: #333; height: 230px;
+  			width: 100%;
+		  	height: 100vh;
+  			display: flex;
+  			align-items: center;
+  			justify-content: center;
+		}
+
+		.text {
+			text-transform: uppercase;
+			background: linear-gradient(to right, red 0%, #FFF 100%);
+			-webkit-background-clip: text;
+  			-webkit-text-fill-color: transparent;
+  			font-size: 10vw;
+  			font-family: "Poppins", sans-serif;
+		}
+	</style>
 </head>
 <body>
-<h2>hello world</h2>
-<h2>hello world 2</h2>
+	<div class="corazon">&#x2665;</div>
+	<h1 class="text">My Lady</h1>
 </body>
 </html>
 
